@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { logOut } from "../../redux/auth/operation";
+import { logOut } from "../../redux/auth/operations";
 import { selectUser } from "../../redux/auth/selectors";
 import { clearList } from "../../redux/contacts/slice";
 import { styled } from '@mui/material/styles';
