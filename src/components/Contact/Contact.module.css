@@ -1,0 +1,41 @@
+.boxName {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.boxNumber {
+    composes: boxName;
+}
+.boxContact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 230px;
+    padding: 10px;
+}
+button {
+    height: 30px;
+    cursor: pointer;
+}
+
+.myButton {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.myButton:hover {
+    opacity: 0.85;
+}
+.myButton:focus {
+    border-color: rgb(255, 153, 0);
+}
