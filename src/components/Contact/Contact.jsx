@@ -11,7 +11,7 @@ import DialogActions from '@mui/material/DialogActions';
 import { styled } from '@mui/material/styles';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contacts/operation';
+import { deleteContact } from '../../redux/contacts/operations';
 
 const CustomListItem = styled(ListItem)(({ theme }) => ({
   display: 'flex',
