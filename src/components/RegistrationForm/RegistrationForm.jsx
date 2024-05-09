@@ -1,6 +1,6 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
-import { register } from "../../redux/auth/operation";
+import { register } from "../../redux/auth/operations";
 import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 import * as Yup from "yup";
