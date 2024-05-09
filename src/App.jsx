@@ -7,7 +7,6 @@ import { refreshUser } from "./redux/auth/operations.js";
 import { Route, Routes } from "react-router-dom";
 import { selectIsRefreshing } from './redux/auth/selectors.js'
 import { Layout } from "./Layout.jsx";
-import { Audio } from "react-loader-spinner";
 
   const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
   const RegistrationPage = lazy(() => import("./pages/RegistrationPage/RegistrationPage"));
@@ -16,7 +15,7 @@ import { Audio } from "react-loader-spinner";
 
 function App() {
   const dispatch = useDispatch();
-  const { isRefreshing } = useSelector(selectIsRefreshing);
+  const isRefreshing = useSelector(selectIsRefreshing);
 
   useEffect(() => {
     dispatch(refreshUser());
