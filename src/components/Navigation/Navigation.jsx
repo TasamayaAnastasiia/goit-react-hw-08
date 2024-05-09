@@ -25,7 +25,7 @@ export const Navigation = () => {
         <StyledButton variant="outlined">Home</StyledButton>
       </NavLink>
       {isLoggedIn && (
-        <NavLink to="/tasks">
+        <NavLink to="/contacts">
           <StyledButton variant="outlined">List contacts</StyledButton>
         </NavLink>
       )}

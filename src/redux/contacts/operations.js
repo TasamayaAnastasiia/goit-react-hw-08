@@ -5,12 +5,7 @@ export const fetchContacts = createAsyncThunk(
     'contacts/fetchAll',
     async (_, thunkApi) => {
         try {
-            const token = useSelector(selectToken);
-            const response = await axios.get(`https://connections-api.herokuapp.com/contacts`, {
-                headers: {
-                  Authorization: `Bearer ${token}`
-                }
-              });
+            const response = await axios.get(`https://connections-api.herokuapp.com/contacts`);
             return response.data;
         }
         catch(e) {
