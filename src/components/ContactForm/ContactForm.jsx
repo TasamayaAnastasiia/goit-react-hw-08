@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contacts/operation';
+import { addContact } from '../../redux/contacts/operations';
 import { nanoid } from '@reduxjs/toolkit';
 import * as Yup from 'yup';
 import TextField from '@mui/material/TextField';

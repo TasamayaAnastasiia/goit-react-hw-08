@@ -3,11 +3,10 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RestrictedRoute } from "./components/RestrictedRoute/RestrictedRoute.jsx";
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute.jsx";
-import { refreshUser } from "./redux/auth/operation.js";
+import { refreshUser } from "./redux/auth/operations.js";
 import { Route, Routes } from "react-router-dom";
 import { selectIsRefreshing } from './redux/auth/selectors.js'
 import { Layout } from "./Layout.jsx";
-import { Audio } from "react-loader-spinner";
 
   const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
   const RegistrationPage = lazy(() => import("./pages/RegistrationPage/RegistrationPage"));
