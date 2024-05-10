@@ -1,11 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { ContactList } from "../../components/ContactList/ContactList";
 import { SearchBox } from "../../components/SearchBox/SearchBox";
 import { selectError, selectLoading } from "../../redux/contacts/selectors";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { styled } from "@mui/material/styles";
 import { CircularProgress } from "@mui/material";
+import { fetchContacts } from "../../redux/contacts/operations";
 
 const StyledPageWrapper = styled("div")({
   backgroundSize: "cover",
@@ -34,6 +35,12 @@ const StyledLoader = styled(CircularProgress)({
 export default function ContactsPage() {
   const loading = useSelector(selectLoading);
   const error = useSelector(selectError);
+  const dispatch = useDispatch();
+
+  
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <StyledPageWrapper>
