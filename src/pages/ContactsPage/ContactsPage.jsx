@@ -26,6 +26,7 @@ const StyledContentWrapper = styled("div")({
   padding: "20px",
   borderRadius: "10px",
   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+  marginTop: "30px",
 });
 
 const StyledLoader = styled(CircularProgress)({
